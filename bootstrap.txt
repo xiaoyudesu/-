@@ -1,0 +1,2 @@
+bootstrap中col-以百分比定义大小，.container有margin和padding15px，.row有margin-15px，.col-有padding15px,（这都是水平方向的），
+故.col-前必须要有.row和.container,缺一不可。若需要为.col-设置margin，通过在.col-中加div解决。若.col中需要再次分行，则只需加.row就行了，无需.container，每一个.row都是100%，即col-12，故即使是在.col中的.row，其也是12列。

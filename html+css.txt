@@ -1,0 +1,30 @@
+1.HTML文件里开头的Doctype有什么作用
+   <!doctype html>这一行是html5的格式，和其他版本不同，首先是告诉html文件使用哪一个版本的html。
+   <!doctypehtml>不是一个标签，它是一种申明，告诉浏览器用何种方式解析HTML文件，使用此声明，则会用w3c标准模式解析文件，若无此声明则会使用怪异模式解析文件，这是微软早期创建的一种模式，已被废弃。
+
+
+
+2.如何理解盒模型及其content、padding、border、margin？
+   在w3c标准中，content的宽高为width，height，向外依次为padding，border，margin。在IE盒子模型中，width或height=content的宽高+padding+border。IE盒子模型仅仅用在IE7及其以下版本，已被废弃。只有display：block/inline-block可以设置width/height、padding，border，margin。若给一个块元素设置background-color，color将覆盖到border（包含）为止。
+
+
+
+3.常见的inline元素、block元素、inline-block元素有哪些？它们之间有什么区别
+     常见的inline：a,span,b,em,i,
+	 block:h1,div,p,ol,ul,li,body,html,
+	 inline-block:img,input,select,
+
+4.如何使用浏览器的F12调试页面？
+
+5.九宫格的布局你还能想到哪些办法实现？它们各自的优势劣势是什么？
+    1，display:inline-block,缺点是每隔block之间有间距，只能用margin为负值来消除。
+	2，用ul和li的组合来实现，缺点是有默认的padding和margin。
+
+6.IDE是什么？它和文本编辑器相比有什么优缺点？
+    Integrated Development Environment ，集成开发环境。
+	优点：1.减轻了开发者的负担，有一些默认的样式。
+		  2.界面统一，便于管理。
+	缺点：有些笨重。
+
+7.加和不加meta的viewport有什么区别？
+	不加meta的viewport会使固定宽度的html不能缩放，在移动端视野很小。
